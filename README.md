@@ -1,100 +1,105 @@
-# Gerador de IA 🤖
+# AI Content Generator 🤖
 
-![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-## Sobre o Projeto ✨
+## About the Project ✨
 
-Este é um projeto desenvolvido como parte do meu aprendizado no [DevClub](https://www.devclub.com.br/). O "Gerador de IA" é uma ferramenta web interativa que permite aos usuários gerar texto ou respostas utilizando a **Groq API**.
+This project was developed as part of my learning journey at [DevClub](https://www.devclub.com.br/), with the goal of creating an **Artificial Intelligence-based content generator**. Utilizing the Groq API, this tool allows users to input a prompt and receive an AI-generated response, demonstrating the integration of language models into simple web applications.
 
-Com este projeto, demonstro minhas habilidades na integração de APIs externas em aplicações front-end, manipulação de DOM com JavaScript, e a importância da segurança no gerenciamento de chaves de API. É um exemplo prático de como construir interfaces que interagem com serviços de inteligência artificial.
+With this project, I aim to consolidate my knowledge in consuming external APIs, asynchronous JavaScript for handling requests, and basic DOM manipulation to display results. It's a practical example of how to integrate AI technologies into user interfaces.
 
 ---
 
-## 💻 Tecnologias Utilizadas
+## 💻 Technologies Used
 
-Aqui estão as tecnologias que utilizei para construir este projeto:
+Here are the technologies I used to build this project:
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Groq](https://img.shields.io/badge/Groq-000000?style=for-the-badge&logo=groq&logoColor=white)
+![Groq API](https://img.shields.io/badge/Groq%20API-FF4081?style=for-the-badge&logo=react&logoColor=white)
+![REST API](https://img.shields.io/badge/REST%20API-00599C?style=for-the-badge&logo=rest&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Features
 
-*   **Geração de Texto/Respostas:** Interage com a Groq API para processar inputs do usuário e retornar conteúdo gerado por IA.
+*   **AI Content Generation:** Sends user prompts to the Groq API and displays the generated response.
 
-*   **Interface Intuitiva:** Design amigável para facilitar a entrada de prompts e visualização das respostas.
+*   **External API Integration:** Consumption of Artificial Intelligence services for dynamic functionalities.
 
-*   **Integração de API:** Demonstra o consumo de serviços externos de IA em uma aplicação web.
+*   **Intuitive User Interface:** Simple design to facilitate text input and response viewing.
 
-*   **Manipulação de DOM:** Atualização dinâmica da interface do usuário com as respostas da IA.
+*   **Asynchronous JavaScript:** Management of API requests in a non-blocking manner.
+
+*   **Secure API Key Management:** Implementation of the API key using environment variables.
 
 ---
 
-## 📸 Visualização do Projeto
+## 📸 Project Visualization
 
-Confira uma captura de tela do projeto:
+Check out a screenshot of the AI generator:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lucaspalmasanches/Gerador-de-IA/main/img/GeradorComIA.PNG" alt="Gerador de IA" width="80%">
+  <img src="https://raw.githubusercontent.com/lucaspalmasanches/AI-Generator/main/img/GeradorComIA.PNG" alt="AI Generator - Desktop Version" width="50%">
 </p>
 
 ---
 
-## 🚀 Como Rodar o Projeto (Localmente)
+## 🚀 How to Run the Project (Locally)
 
-Para rodar este projeto em sua máquina local, siga os passos abaixo. Este projeto requer uma chave de API da Groq para funcionar.
+To run this project on your local machine, follow the steps below. This project requires a Groq API key to function.
 
-1.  **Clone o repositório:**
+1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/lucaspalmasanches/Gerador-de-IA.git
+    git clone https://github.com/lucaspalmasanches/AI-Generator.git
     ```
 
-2.  **Navegue até o diretório do projeto:**
+2.  **Navigate to the project directory:**
     ```bash
-    cd Gerador-de-IA
+    cd AI-Generator
     ```
 
-3.  **Configurar a Chave de API da Groq (Essencial):**
-    *   **Importante:** A chave de API é uma informação sensível e **não deve ser commitada no Git**. Este repositório já está configurado com um arquivo `.gitignore` para ignorar o arquivo `.env`.
-    *   Para que o projeto funcione localmente, é necessário fornecer sua própria chave de API da Groq.
-    *   **Crie um arquivo chamado `.env`** na raiz do projeto (na mesma pasta do `index.html`).
-    *   Dentro do arquivo `.env`, adicione sua chave de API da Groq no seguinte formato:
+3.  **Configure the Groq API Key (Essential):**
+    *   **Important:** The API key is sensitive information and **must not be committed to Git**. This repository is already configured with a `.gitignore` file to ignore `.env`.
+    *   For the project to work locally, you need to provide your own Groq API key (obtained for free from their website).
+    *   **Create a file named `.env`** in the root of the project (in the same folder as `index.html`).
+    *   Inside the `.env` file, add your API key in the following format:
         ```
-        GROQ_API_KEY="SUA_CHAVE_DE_API_DA_GROQ_AQUI"
+        GROQ_API_KEY="YOUR_GROQ_API_KEY_HERE"
         ```
-        *   **Substitua `"SUA_CHAVE_DE_API_DA_GROQ_AQUI"` pela sua chave real obtida no site da Groq.**
-    *   **Observação:** Este projeto acessa a API diretamente do JavaScript no navegador. Para o desenvolvimento local, a chave será lida do ambiente de execução. Para um deploy em produção (ex: GitHub Pages), a prática recomendada é usar um backend (servidor) para intermediar as chamadas à API, protegendo sua chave de ser exposta no código cliente.
+        *   **Replace `"YOUR_GROQ_API_KEY_HERE"` with your actual key.**
+    *   **Note:** This project accesses the API directly from JavaScript in the browser. For local development, the key will be read from the execution environment. For a production deployment (e.g., GitHub Pages), the recommended practice is to use a backend (server) to mediate calls to the API, protecting your key from being exposed in client-side code.
 
-4.  **Abra o arquivo `index.html`:**
-    *   Simplesmente abra o arquivo `index.html` em seu navegador web preferido para visualizar e interagir com o gerador de IA.
+4.  **Open the `index.html` file:**
+    *   Simply open the `index.html` file in your preferred web browser to view and interact with the AI generator.
 
 ---
 
-## 📚 Aprendizados
+## 📚 Learnings
 
-Este projeto foi uma experiência valiosa para consolidar meus conhecimentos em:
+This project was a valuable and challenging experience, consolidating my knowledge in:
 
-*   **Integração de APIs:** Consumo de serviços externos de inteligência artificial (Groq API).
+*   **External API Consumption:** Integration with Artificial Intelligence services for dynamic functionalities.
 
-*   **JavaScript Avançado:** Manipulação de DOM para criar interfaces interativas e dinâmicas.
+*   **Asynchronous JavaScript:** Use of `fetch` and `async/await` to handle API requests efficiently.
 
-*   **Segurança em Desenvolvimento:** A importância de gerenciar chaves de API com `.env` e `.gitignore`.
+*   **DOM Manipulation:** Dynamic updating of the user interface to display AI responses.
 
-*   **HTML Semântico e CSS Responsivo:** Criação de estruturas web claras e estilização adaptável.
+*   **Security in Development:** The importance and correct implementation of API key management with `.env` and `.gitignore`.
 
-*   **Controle de Versão:** Gerenciamento eficiente de código com Git e GitHub, incluindo reescrita de histórico para segurança.
+*   **Semantic HTML and Basic CSS:** Clear web content structuring and styling for a functional user interface.
+
+*   **Version Control:** Efficient code management with Git and GitHub.
 
 ---
 
-## Conecte-se Comigo 🤝
+## Let's Connect! 🤝
 
-Estou sempre aberto a novas conexões e oportunidades. Sinta-se à vontade para entrar em contato!
+I'm always open to new connections, opportunities, and challenges. Feel free to reach out!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-palma-sanches-082902426)
 [![E-mail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucaspalma331@gmail.com)
